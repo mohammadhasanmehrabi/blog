@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>وبلاگ</title>
+</head>
+<body>
+    <h1>پست‌های وبلاگ</h1>
+    {% for post in posts %}
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <small>نوشته شده در: {{ post.created_at }}</small>
+        </div>
+    {% endfor %}
+</body>
+</html>
